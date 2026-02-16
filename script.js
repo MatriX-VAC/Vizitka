@@ -29,14 +29,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Анимация прогресс-баров при появлении (дополнительно)
+// Анимация прогресс-баров при появлении
 const skillBars = document.querySelectorAll('.skill-progress');
 const skillSection = document.getElementById('skills');
 
 const barObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      // Бары уже имеют ширину, но можно добавить небольшую задержку для красоты
       skillBars.forEach(bar => {
         bar.style.transition = 'width 1s ease';
       });
@@ -46,4 +45,23 @@ const barObserver = new IntersectionObserver((entries) => {
 
 if (skillSection) {
   barObserver.observe(skillSection);
+}
+
+// Гамбургер-меню
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+if (hamburger && navLinks) {
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+  });
+
+  // Закрыть меню при клике на ссылку
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('active');
+    });
+  });
 }
