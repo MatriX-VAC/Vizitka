@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MatriX | Developer</title>
+  <!-- Font Awesome для иконок -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Подключаем внешний CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Навигация -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">MatriX</div>
+      <div class="nav-links">
+        <a href="#home">Главная</a>
+        <a href="#about">Обо мне</a>
+        <a href="#skills">Навыки</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contact">Контакты</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Герой секция -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text fade-in">
+        <h1>Привет, я <span class="highlight">MatriX</span></h1>
+        <p>Начинающий фронтенд-разработчик, создаю тёплые и стильные сайты с душой. Люблю удивлять близких и помогать малому бизнесу.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn">Смотреть работы</a>
+          <a href="#contact" class="btn">Связаться</a>
+        </div>
+      </div>
+      <div class="hero-image fade-in">
+        <!-- Заглушка аватарки (можно заменить на своё фото) -->
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%236c5ce7' opacity='0.2'/%3E%3Ccircle cx='50' cy='50' r='35' fill='%236c5ce7' opacity='0.4'/%3E%3Ccircle cx='50' cy='50' r='25' fill='%236c5ce7' opacity='0.6'/%3E%3Ctext x='50' y='62' font-size='40' text-anchor='middle' fill='%23ffffff' font-family='Arial'%3EMX%3C/text%3E%3C/svg%3E" alt="MatriX">
+      </div>
+    </div>
+  </section>
+
+  <!-- О себе -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Обо мне</h2>
+      <div class="about-content">
+        <div class="about-text fade-in">
+          <p>Я — MatriX, начинающий веб‑разработчик. Мой путь начался с желания делать крутые штуки для друзей и знакомых. Уже успел поработать над сайтом для маникюрного салона, создать сюрпризы к 14 февраля и просто тёплые странички для близких.</p>
+          <p>Сейчас активно осваиваю современный JavaScript, React и всё, что делает интерфейсы живыми и удобными. Мечтаю превращать идеи в красивые и работающие сайты.</p>
+          <p>В свободное время учусь новому, играю на гитаре и пью кофе литрами ☕.</p>
+        </div>
+        <div class="stats fade-in">
+          <div class="stat-item">
+            <div class="stat-number">3+</div>
+            <div class="stat-label">Проекта</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Души</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">2</div>
+            <div class="stat-label">Довольных клиента</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Чашек кофе</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Навыки -->
+  <section id="skills">
+    <div class="container">
+      <h2>Мои навыки</h2>
+      <div class="skills-grid">
+        <div class="skill-card fade-in">
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+          <h3>HTML5</h3>
+          <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+          <h3>CSS3 / SCSS</h3>
+          <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon"><i class="fab fa-js"></i></div>
+          <h3>JavaScript (ES6+)</h3>
+          <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon"><i class="fab fa-react"></i></div>
+          <h3>React (изучаю)</h3>
+          <div class="skill-bar"><div class="skill-progress" style="width: 60%;"></div></div>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Адаптивная вёрстка</h3>
+          <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon"><i class="fas fa-heart"></i></div>
+          <h3>Креативность</h3>
+          <div class="skill-bar"><div class="skill-progress" style="width: 100%;"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Проекты (твои реальные работы) -->
+  <section id="projects">
+    <div class="container">
+      <h2>Мои проекты</h2>
+      <div class="projects-grid">
+        <div class="project-card fade-in">
+          <div class="project-img"><i class="fas fa-spa"></i></div>
+          <div class="project-info">
+            <h3>Маникюрный салон «Nail Aligance»</h3>
+            <p>Сайт с портфолио работ, списком услуг и формой онлайн-записи. Нежная цветовая гамма, адаптив под все устройства.</p>
+            <div class="project-links">
+              <a href="https://github.com/MatriX-VAC/Nail-Elegance"><i class="fab fa-github"></i></a>
+              <a href="https://matrix-vac.github.io/Nail-Elegance/"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card fade-in">
+          <div class="project-img"><i class="fas fa-heart"></i></div>
+          <div class="project-info">
+            <h3>Сюрприз к 14 февраля</h3>
+            <p>Интерактивная валентинка с анимациями, музыкой и личными пожеланиями. Сделано специально для подруги.</p>
+            <div class="project-links">
+              <a href="https://github.com/MatriX-VAC/14"><i class="fab fa-github"></i></a>
+              <a href="https://matrix-vac.github.io/14/"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card fade-in">
+          <div class="project-img"><i class="fas fa-smile"></i></div>
+          <div class="project-info">
+            <h3>Страница благодарности</h3>
+            <p>Красивый одностраничный сайт с фотографиями и тёплыми словами для подруги. Просто чтобы сказать «спасибо».</p>
+            <div class="project-links">
+              <a href="https://github.com/MatriX-VAC/dadafd/tree/main"><i class="fab fa-github"></i></a>
+              <a href="https://matrix-vac.github.io/dadafd/"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты (только tg, почта, git) -->
+  <section id="contact">
+    <div class="container">
+      <h2>Свяжитесь со мной</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item fade-in">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-text">
+              <h4>Email</h4>
+              <a href="slysh94@gmail.com">slysh94@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item fade-in">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-text">
+              <h4>GitHub</h4>
+              <a href="https://github.com/MatriX-VAC">github.com/MatriX-VAC</a>
+            </div>
+          </div>
+          <div class="contact-item fade-in">
+            <div class="contact-icon"><i class="fab fa-telegram-plane"></i></div>
+            <div class="contact-text">
+              <h4>Telegram</h4>
+              <a href="https://t.me/@Matrix788">@Matrix788</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 MatriX. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Подключаем внешний JS -->
+  <script src="script.js"></script>
+</body>
+</html>
